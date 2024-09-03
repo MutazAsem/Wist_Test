@@ -55,7 +55,7 @@ https://github.com/bezhanSalleh/filament-shield
 
 قم بتشغيل وحدة التحكم bash هناك واستنسخ المشروع.
 
-`git clone https://github.com/DeveloperAbod/programming_education_platform.git`
+`git clone https://github.com/MutazAsem/Wist_Test.git`
 
 ### 2. انتقل الى مسار المشروع
 يجب أن تكون داخل مسار المشروع الذي تم إنشاؤه للتو، لذا انتقل إليه.
@@ -76,7 +76,8 @@ https://github.com/bezhanSalleh/filament-shield
 
 ### 4. قم بإنشاء ملف .env
 
-يجب عليك عمل نسخة من ملف .env.example وتسميته .env حتى تتمكن من إعداد الاعدادات الخاص بك, يمكنك النسخ بإستخدام هذا الامر
+يجب عليك عمل نسخة من ملف .env.example وتسميته .env حتى تتمكن من إعداد الاعدادات الخاص بك, يمكنك النسخ , و يجب  تعديل بيانات Email من اجل ارسال email التحقق من الحساب
+ بإستخدام هذا الامر
 
 `cp .env.example .env`
 
@@ -95,34 +96,22 @@ https://github.com/bezhanSalleh/filament-shield
 
 `php artisan migrate`
 
-### 9. قم بانشاء seeder للسجلات (اضافة البيانات الاساسية لقاعدة البيانات) 
-`php artisan db:seed --class=PermissionTableSeeder`
 
 
-`php artisan db:seed --class=CreateAdminUserSeeder`
-
-
-### 10. تهيئة الصلاحيات وجلبها الى قاعدة البيانات
+### 9. تهيئة الصلاحيات وجلبها الى قاعدة البيانات
 
 
 `shield:install --fresh`
 
 
-### 11. التاكد من ربط ال stoarge ب public files
+### 10. التاكد من ربط ال stoarge ب public files
 
 
 `php artisan storage:link`
 
 
-### 12. قم بتشغيل السيرفر محليا
+### 11. قم بتشغيل السيرفر محليا
 `php artisan serve`
-
-
-### 13. قم بالدخول الى لوحة التحكم من الرابط التالي 
-
-`http://127.0.0.1:8000/admin`
-
-الحساب الاساسي (مدير النظام) `admin@admin.com`  كلمة المرور `12345678`
 
 
 
@@ -151,11 +140,4 @@ https://github.com/bezhanSalleh/filament-shield
 `vendor/bin/pest`
 
 
-## طريقة استخدام النظام
-
-
-
-## صورة للمشروع
-
-![screencapture-127-0-0-1-8000-admin-2024-08-12-22_31_12](https://github.com/user-attachments/assets/c5b508f7-54d6-413e-97a9-836df5e37413)
 
